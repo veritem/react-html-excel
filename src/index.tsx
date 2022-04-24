@@ -46,7 +46,7 @@ export default function HtmlToExecl({
 
     const table = document.getElementById(values.table).outerHTML;
     const sheet = String(values.sheet);
-    const filename = `${String(values.filename)}.xlsx`;
+    const filename = `${String(values.filename)}.xls`;
     const uri = "data:application/vnd.ms-excel;base64,";
     const template =
       '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-mic' +
