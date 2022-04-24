@@ -1,0 +1,42 @@
+{
+  "name": "react-html-excel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.tsx.cjs",
+  "module": "./dist/index.tsx.mjs",
+  "types": "./dist/index.tsx.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.tsx.cjs",
+      "default": "./dist/index.tsx.mjs",
+      "types": "./dist/index.tsx.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "unbuild --stub",
+    "build": "unbuild",
+    "test": "vitest",
+    "release": "pnpm build && bumpp package.json --commit --push --tag && pnpm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veritem/react-html-excel.git"
+  },
+  "keywords": [],
+  "author": "Makuza Mugabo Verite <mugaboverite@gmail.com> (https://veritem.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veritem/react-html-excel/issues"
+  },
+  "homepage": "https://github.com/veritem/react-html-excel#readme",
+  "devDependencies": {
+    "bumpp": "^7.1.1",
+    "react": "^18.0.0",
+    "unbuild": "^0.7.4",
+    "vite": "^2.9.5",
+    "vitest": "^0.9.4"
+  }
+}
