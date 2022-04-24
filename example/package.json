@@ -9,12 +9,12 @@
   "keywords": [],
   "author": "Makuza Mugabo Verite <mugaboverite@gmail.com> (https://veritem.me/)",
   "license": "MIT",
-  "dependencies": {
-    "@veritem/react-html-excel": "^0.0.5",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
   "devDependencies": {
     "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "@veritem/react-html-excel": "^0.0.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
