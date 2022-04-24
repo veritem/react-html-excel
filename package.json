@@ -1,6 +1,6 @@
 {
   "name": "@veritem/react-html-excel",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "./dist/index.tsx.cjs",
   "module": "./dist/index.tsx.mjs",
