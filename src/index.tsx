@@ -18,7 +18,7 @@ export default function HtmlToExecl({
   const values = { table, filename, sheet };
 
   function base64(s) {
-    return window.btoa(decodeURI(encodeURIComponent(s)));
+    return window.btoa(decodeURIComponent(encodeURIComponent(s)));
   }
 
   function format(s, c) {
