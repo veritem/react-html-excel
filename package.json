@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/veritem/react-html-excel#readme",
   "devDependencies": {
+    "@types/react": "^18.0.6",
     "bumpp": "^7.1.1",
     "react": "^18.0.0",
     "unbuild": "^0.7.4",

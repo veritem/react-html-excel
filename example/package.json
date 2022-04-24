@@ -10,9 +10,9 @@
   "author": "Makuza Mugabo Verite <mugaboverite@gmail.com> (https://veritem.me/)",
   "license": "MIT",
   "dependencies": {
+    "@veritem/react-html-excel": "../dist",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@veritem/react-html-excel": "../dist"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "parcel": "^2.5.0"

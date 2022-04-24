@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 interface IProps {
   table: string;
@@ -8,16 +8,14 @@ interface IProps {
   buttonText: string;
 }
 
-export default function HtmlToExecl({
+export function HtmlToExecl({
   table,
   filename,
   sheet,
   className = "button-download",
   buttonText = "Download",
 }: IProps) {
-  const [tableState] = useState(table);
-  const [filenameState] = useState(filename);
-  const [sheetState] = useState(sheet);
+  const values = { table, filename, sheet };
 
   function base64(s) {
     return window.btoa(encodeURIComponent(s));
@@ -36,8 +34,8 @@ export default function HtmlToExecl({
     }
 
     if (
-      document.getElementById(tableState).nodeType !== 1 ||
-      document.getElementById(tableState).nodeName !== "TABLE"
+      document.getElementById(values.table).nodeType !== 1 ||
+      document.getElementById(values.table).nodeName !== "TABLE"
     ) {
       if (process.env.NODE_ENV !== "production") {
         console.error("Provided table property is not html table element");
@@ -46,9 +44,9 @@ export default function HtmlToExecl({
       return;
     }
 
-    const table = document.getElementById(tableState).outerHTML;
-    const sheet = String(sheetState);
-    const filename = `${String(filenameState)}.xlsx`;
+    const table = document.getElementById(values.table).outerHTML;
+    const sheet = String(values.sheet);
+    const filename = `${String(values.filename)}.xlsx`;
     const uri = "data:application/vnd.ms-excel;base64,";
     const template =
       '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-mic' +
