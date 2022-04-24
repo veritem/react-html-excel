@@ -1,13 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@veritem/react-html-excel': ../dist
+  '@veritem/react-html-excel': ^0.0.3
   parcel: ^2.5.0
   react: ^18.0.0
   react-dom: ^18.0.0
 
 dependencies:
-  '@veritem/react-html-excel': link:../dist
+  '@veritem/react-html-excel': 0.0.3
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
 
@@ -821,6 +821,10 @@ packages:
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
+
+  /@veritem/react-html-excel/0.0.3:
+    resolution: {integrity: sha512-EkL16B2W9Kdw1FK2s21qgFRb5fu9cf91qZl8UgW0dYMtsItIUCT2actGWfponLrJ1qb6O14Shy9K4hKuyL1o2w==}
+    dev: false
 
   /abortcontroller-polyfill/1.7.3:
     resolution: {integrity: sha512-zetDJxd89y3X99Kvo4qFx8GKlt6GsvN3UcRZHwU6iFA/0KiOmhkTVhe8oRoTBiTVPZu09x3vCra47+w8Yz1+2Q==}

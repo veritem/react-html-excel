@@ -8,7 +8,7 @@ interface IProps {
   buttonText: string;
 }
 
-export function HtmlToExecl({
+export default function HtmlToExecl({
   table,
   filename,
   sheet,

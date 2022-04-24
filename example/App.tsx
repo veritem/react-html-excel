@@ -4,13 +4,7 @@ import React from "react";
 export function App() {
   return (
     <section>
-      <ReacthtmlToexcel
-        className="download-table-xls-button"
-        table="table-to-xls"
-        filename="tablexls"
-        sheet="tablexls"
-        buttonText="Download as XLS"
-      />
+      <ReacthtmlToexcel />
       <table id="table-to-xls">
         <tr>
           <th>Firstname</th>
