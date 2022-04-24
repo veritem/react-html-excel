@@ -18,7 +18,7 @@ export default function HtmlToExecl({
   const values = { table, filename, sheet };
 
   function base64(s) {
-    return window.btoa(decodeURIComponent(encodeURIComponent(s)));
+    return window.btoa(unescape(encodeURIComponent(s)));
   }
 
   function format(s, c) {
@@ -45,8 +45,7 @@ export default function HtmlToExecl({
     }
 
     const table = document.getElementById(values.table).outerHTML;
-    const sheet = String(values.sheet);
-    const filename = `${String(values.filename)}.xls`;
+    const filename = `${values.filename}.xls`;
     const uri = "data:application/vnd.ms-excel;base64,";
     const template =
       '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-mic' +
@@ -57,7 +56,7 @@ export default function HtmlToExecl({
       "xml><![endif]--></head><body>{table}</body></html>";
 
     const context = {
-      worksheet: sheet || "Worksheet",
+      worksheet: values.sheet || "Worksheet",
       table,
     };
 
