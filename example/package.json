@@ -13,7 +13,7 @@
     "parcel": "^2.5.0"
   },
   "dependencies": {
-    "@veritem/react-html-excel": "0.0.8",
+    "@veritem/react-html-excel": "0.0.9",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
