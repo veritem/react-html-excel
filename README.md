@@ -1,4 +1,4 @@
-### React Html to Excel 
+### React Html table to Excel 
 
 ![npm](https://img.shields.io/npm/v/@veritem/react-html-excel)
 
