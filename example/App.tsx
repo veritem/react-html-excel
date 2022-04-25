@@ -7,7 +7,7 @@ export function App() {
       <ReacthtmlToexcel
         className="download-table-xls-button"
         table="table-to-xls"
-        filename="tablexls"
+        filename="table"
         sheet="tablexls"
         buttonText="Download as XLS"
       />

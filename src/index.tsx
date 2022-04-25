@@ -1,8 +1,7 @@
-import React from "react";
-
 interface IProps {
   table: string;
   filename: string;
+  extension: "xls" | "xlsx";
   sheet: string;
   className: string;
   buttonText: string;
@@ -14,8 +13,9 @@ export default function HtmlToExecl({
   sheet,
   className = "button-download",
   buttonText = "Download",
+  extension = "xls",
 }: IProps) {
-  const values = { table, filename, sheet };
+  const values = { table, filename, sheet, extension };
 
   function base64(s) {
     return window.btoa(unescape(encodeURIComponent(s)));
@@ -45,7 +45,7 @@ export default function HtmlToExecl({
     }
 
     const table = document.getElementById(values.table).outerHTML;
-    const filename = `${values.filename}.xls`;
+    const filename = `${values.filename}.${values.extension}`;
     const uri = "data:application/vnd.ms-excel;base64,";
     const template =
       '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-mic' +
